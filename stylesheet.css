@@ -1,8 +1,21 @@
 div{
     align-self: auto;
+    background-color: white;
+    color:black;
+    border-radius: 1%;
+    padding: 1%;
+    margin: 1%;
 }
-
+.image_holder{
+    border-radius: 10px;
+}
 .responsive{
     width: 100%;
     height: auto;
+}
+body{
+    background-color: black;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
