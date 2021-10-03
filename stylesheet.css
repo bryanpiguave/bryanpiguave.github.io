@@ -16,6 +16,13 @@ div{
     margin-left: auto;
     margin-right: auto;
     border-radius: 40px;
+}
+.img-responsive{
+width: 60%;
+height:auto;
+margin-left:auto;
+margin-right:auto;
+display: block;
 
 }
 body{
@@ -24,9 +31,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 
 }
-img{
-    vertical-align:auto;
-}
+
 p{
     display: inline-block;
 }
@@ -37,4 +42,7 @@ p{
     background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(5px);
 
+}
+figcaption{
+    text-align: center;
 }
