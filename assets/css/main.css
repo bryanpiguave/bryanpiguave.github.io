@@ -99,7 +99,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #666;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family:'Courier New', Courier, monospace;
 		font-size: 16pt;
 		font-weight: 300;
 		line-height: 1.65em;
@@ -131,6 +131,7 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 2em 0;
+		text-justify: auto;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
