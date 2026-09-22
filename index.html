@@ -30,7 +30,7 @@
 						<li><a href="#about">About</a></li>
 						<li><a href="#publications">Publications</a></li>
 						<li><a href="#experience">Experience</a></li>
-						<li><a href="#projects">Projects</a></li>
+						<li><a href="#projects">Code</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</div>
@@ -216,6 +216,7 @@
 								</p>
 								<ul class="pub__links">
 									<li><a href="https://doi.org/10.1021/acsomega.1c06669">DOI</a></li>
+									<li><a href="https://github.com/bryanpiguave/Air-Separation">Code</a></li>
 								</ul>
 							</div>
 						</li>
@@ -256,6 +257,7 @@
 								<ul class="pub__links">
 									<li><a href="https://doi.org/10.1016/j.ifacol.2021.08.295">DOI</a></li>
 									<li><a href="https://www.sciencedirect.com/science/article/pii/S2405896321010685">ScienceDirect</a></li>
+									<li><a href="https://github.com/bryanpiguave/Air-Separation">Code</a></li>
 								</ul>
 							</div>
 						</li>
@@ -345,94 +347,115 @@
 		<!-- Projects -->
 			<section class="section" id="projects">
 				<div class="container">
-					<h2>Personal projects</h2>
-					<p class="section-lede">Side work, mostly in Python and R. Source on GitHub.</p>
+					<h2>Code &amp; tools</h2>
+					<p class="section-lede">
+						Research code, simulation tools and teaching material. Everything is on
+						<a href="https://github.com/bryanpiguave">GitHub</a>.
+					</p>
 
 					<ul class="cards">
 
 						<li class="card">
 							<div class="card__media card__media--icon">
-								<span class="fas fa-chart-pie" aria-hidden="true"></span>
+								<span class="fas fa-vial" aria-hidden="true"></span>
 							</div>
 							<div class="card__body">
-								<h3>RFM Analysis</h3>
+								<h3>Few-Shot Learning for Molecular Toxicity</h3>
 								<p>
-									Code, data and resources for Recency&ndash;Frequency&ndash;Monetary analysis: segmenting
-									customers by buying behaviour so businesses can identify high-value segments
-									and target them accordingly.
+									Bootstrapped prototypical networks for toxicity prediction on the Tox21 benchmark,
+									where labelled data per endpoint is scarce. ECFP fingerprint encoder, meta-training
+									over nine tasks, evaluation on three held-out endpoints. PyTorch, RDKit, Mordred.
 								</p>
-								<a class="card__link" href="https://github.com/bryanpiguave/RFMAnalysis">View repository &rarr;</a>
+								<a class="card__link" href="https://github.com/bryanpiguave/FSL_StudyCase">View repository &rarr;</a>
+							</div>
+						</li>
+
+						<li class="card">
+							<div class="card__media">
+								<img src="images/better_framework.jpg" alt="" loading="lazy" />
+							</div>
+							<div class="card__body">
+								<h3>Air Separation Unit Optimization</h3>
+								<p>
+									The simulation and optimization code behind my two air separation papers: Python
+									driving a PRO/II process simulation over COM, with cost models for compressors,
+									expanders, towers and heat exchangers for CAPEX and OPEX estimation.
+								</p>
+								<a class="card__link" href="https://github.com/bryanpiguave/Air-Separation">View repository &rarr;</a>
 							</div>
 						</li>
 
 						<li class="card">
 							<div class="card__media card__media--icon">
-								<span class="fas fa-leaf" aria-hidden="true"></span>
+								<span class="fas fa-project-diagram" aria-hidden="true"></span>
 							</div>
 							<div class="card__body">
-								<h3>Produce Classifier</h3>
+								<h3>Graph Neural Networks for HIV Activity</h3>
 								<p>
-									A TensorFlow model that classifies plants and fruits from images.
+									Molecular graph classification from SMILES, with atom-level featurization covering
+									element, degree, formal charge and orbital hybridization, and bond-level features
+									for the molecular graph.
 								</p>
-								<a class="card__link" href="https://github.com/bryanpiguave/ProduceCV">View repository &rarr;</a>
+								<a class="card__link" href="https://github.com/bryanpiguave/GNN_HIV">View repository &rarr;</a>
 							</div>
 						</li>
 
 						<li class="card">
-							<div class="card__media">
-								<img src="https://github.com/bryanpiguave/AmazonSentimentAnalysis/raw/master/demo.png" alt="" loading="lazy" />
+							<div class="card__media card__media--icon">
+								<span class="fas fa-atom" aria-hidden="true"></span>
 							</div>
 							<div class="card__body">
-								<h3>Sentiment Analysis for Amazon Reviews</h3>
+								<h3>Molecular Dynamics of Argon</h3>
 								<p>
-									Predicts whether a reviewer liked a product, using logistic regression and support
-									vector machines trained on customer reviews and ratings.
+									LAMMPS simulations of argon across thermodynamic conditions, with analysis code for
+									the radial distribution function <em>g(r)</em>, mean squared displacement, and
+									diffusion constants as a function of temperature.
 								</p>
-								<a class="card__link" href="https://github.com/bryanpiguave/AmazonSentimentAnalysis">View repository &rarr;</a>
+								<a class="card__link" href="https://github.com/bryanpiguave/Argon_MD">View repository &rarr;</a>
 							</div>
 						</li>
 
 						<li class="card">
-							<div class="card__media">
-								<img src="images/task_manager.png" alt="" loading="lazy" />
+							<div class="card__media card__media--icon">
+								<span class="fas fa-thermometer-half" aria-hidden="true"></span>
 							</div>
 							<div class="card__body">
-								<h3>Task Manager</h3>
+								<h3>Chemical Engineering Thermodynamics Toolkit</h3>
 								<p>
-									A CRUD task manager built on a PHP and MySQL stack.
+									Interactive tools for thermodynamics calculations: IAPWS-IF97 steam properties,
+									Rankine, Brayton and refrigeration cycle analysis, and binary vapour&ndash;liquid
+									equilibrium with the Wilson and NRTL activity coefficient models.
 								</p>
-								<a class="card__link" href="https://github.com/bryanpiguave/phpmysql">View repository &rarr;</a>
+								<a class="card__link" href="https://github.com/bryanpiguave/PythonChemE">View repository &rarr;</a>
 							</div>
 						</li>
 
 						<li class="card">
-							<div class="card__media">
-								<img src="images/GameOfLife.png" alt="" loading="lazy" />
+							<div class="card__media card__media--icon">
+								<span class="fas fa-th" aria-hidden="true"></span>
 							</div>
 							<div class="card__body">
-								<h3>Game of Life</h3>
+								<h3>2D Ising Model</h3>
 								<p>
-									A Python implementation of John Conway&rsquo;s zero-player cellular automaton.
+									Monte Carlo simulation of the 2D Ising model with the Metropolis algorithm and
+									periodic boundary conditions, used to study magnetization and susceptibility against
+									temperature and lattice size, and to estimate the critical temperature by finite-size
+									scaling.
 								</p>
-								<a class="card__link" href="https://github.com/bryanpiguave/Game_of_Life">View repository &rarr;</a>
-							</div>
-						</li>
-
-						<li class="card">
-							<div class="card__media">
-								<img src="images/YourPalette.png" alt="" loading="lazy" />
-							</div>
-							<div class="card__body">
-								<h3>YourPalette</h3>
-								<p>
-									A web app that extracts a colour palette from your pictures with a clustering
-									algorithm.
-								</p>
-								<a class="card__link" href="https://github.com/bryanpiguave/YourPalette">View repository &rarr;</a>
+								<a class="card__link" href="https://github.com/bryanpiguave/IsingModel2D">View repository &rarr;</a>
 							</div>
 						</li>
 
 					</ul>
+
+					<p style="margin-top: 2rem;">
+						Also on GitHub: a
+						<a href="https://github.com/bryanpiguave/McCabeThiele">McCabe&ndash;Thiele distillation solver</a>,
+						a <a href="https://github.com/bryanpiguave/Thermodynamics_HP_Prime">thermodynamics app for the HP Prime calculator</a>
+						(equations of state, compressibility, psychrometrics, VLE), and
+						<a href="https://github.com/bryanpiguave/StatisticalPlots">statistical plotting examples</a>
+						for teaching.
+					</p>
 				</div>
 			</section>
 
